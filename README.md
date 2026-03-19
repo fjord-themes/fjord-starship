@@ -42,6 +42,10 @@ git clone https://github.com/fjord-themes/fjord-starship.git --depth 1
 
 
 2. Add the theme to your Starship config (`~/.config/starship.toml`):
+```bash
+mv ~/.config/starship.toml ~/.config/starship.toml.bak
+cp fjord-starship/themes/starship.toml ~/.config/starship.toml
+```
 
 
 
@@ -56,10 +60,6 @@ The theme includes:
 - Optimized prompt segments for Git, directory, and language info
 - Visual separation using color gradients
 - Status indicators with appropriate colors
-## 📸 Preview
-
-![Fjord Starship Theme](https://github.com/fjord-theme/Fjord/blob/main/images/starship.png)
-
 
 ## 🔄 Updates
 
