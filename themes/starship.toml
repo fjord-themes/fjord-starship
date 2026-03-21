@@ -44,8 +44,8 @@ color_text = "#E8F0F3"
 
 # Alerts
 color_red = "#F37C7C"
-color_purple = "#A8A4F8"
-color_yellow = "#C8B860"
+color_purple = "#B9A0F8"
+color_yellow = "#FFD285"
 
 [os]
 disabled = false
