@@ -1,6 +1,6 @@
 # Fjord Theme for Starship
 
-A dusk-blue base with soft leaf-green accents, amber selections, and crisp blue/cyan separation for the Starship prompt.
+A dusk-blue base with soft leaf-green accents, cyan selections, and crisp blue/cyan separation for the Starship prompt.
 
 
 ## 🎨 Color Palette
