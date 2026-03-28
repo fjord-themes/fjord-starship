@@ -4,46 +4,44 @@ format = """
 [](color_green)\
 $os\
 $username\
-[](fg:color_green bg:color_cyan)\
+[](fg:color_green bg:color_teal)\
 $directory\
-[](fg:color_cyan bg:color_b_blue)\
+[](fg:color_teal bg:color_sky)\
 $git_branch\
 $git_status\
-[](fg:color_b_blue bg:color_blue)\
+[](fg:color_sky bg:color_sapphire)\
 $c\
-$cpp\
 $rust\
 $golang\
 $nodejs\
 $php\
 $java\
 $python\
-[](fg:color_blue bg:color_steel)\
+[](fg:color_sapphire bg:color_blue)\
 $docker_context\
 $conda\
-[](fg:color_steel bg:color_overlay)\
+[](fg:color_blue bg:color_base)\
 $time\
-[](fg:color_overlay)\
+[ ](fg:color_base)\
 $line_break$character"""
 
 palette = 'colors'
 
 [palettes.colors]
 # Accents
-color_green = "#9DD99A"
-color_cyan = "#B8E7E9"
-color_b_blue = "#7BB8FF"
-color_blue = "#5DA6EA"
-color_steel = "#4C89C9"
+color_green    = "#9DD99A"
+color_teal     = "#B8E7E9"
+color_sky      = "#7BB8FF"
+color_sapphire = "#5DA6EA"
+color_blue     = "#4C89C9"
 
 # Neutrals
-color_base = "#1B2532"
-color_overlay = "#2D3D52"
+color_base     = "#212128"
 color_surface0 = "#1F2A39"
-color_text = "#E8F0F3"
+color_text     = "#E8F0F3"
 
 # Alerts
-color_red = "#F37C7C"
+color_red    = "#F37C7C"
 color_purple = "#B9A0F8"
 color_yellow = "#FFD285"
 
@@ -81,7 +79,7 @@ style_root = "bg:color_green fg:color_surface0"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:color_surface0 bg:color_cyan"
+style = "fg:color_surface0 bg:color_teal"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -95,62 +93,62 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:color_b_blue"
-format = '[[ $symbol $branch ](fg:color_surface0 bg:color_b_blue)]($style)'
+style = "bg:color_sky"
+format = '[[ $symbol $branch ](fg:color_surface0 bg:color_sky)]($style)'
 
 [git_status]
-style = "bg:color_b_blue"
-format = '[[($all_status$ahead_behind )](fg:color_surface0 bg:color_b_blue)]($style)'
+style = "bg:color_sky"
+format = '[[($all_status$ahead_behind )](fg:color_surface0 bg:color_sky)]($style)'
 
 [c]
 symbol = " "
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_surface0 bg:color_blue)]($style)'
+style = "bg:color_sapphire"
+format = '[[ $symbol( $version) ](fg:color_surface0 bg:color_sapphire)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_surface0 bg:color_blue)]($style)'
+style = "bg:color_sapphire"
+format = '[[ $symbol( $version) ](fg:color_surface0 bg:color_sapphire)]($style)'
 
 [golang]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_surface0 bg:color_blue)]($style)'
+style = "bg:color_sapphire"
+format = '[[ $symbol( $version) ](fg:color_surface0 bg:color_sapphire)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_surface0 bg:color_blue)]($style)'
+style = "bg:color_sapphire"
+format = '[[ $symbol( $version) ](fg:color_surface0 bg:color_sapphire)]($style)'
 
 [php]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_surface0 bg:color_blue)]($style)'
+style = "bg:color_sapphire"
+format = '[[ $symbol( $version) ](fg:color_surface0 bg:color_sapphire)]($style)'
 
 [java]
 symbol = " "
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_surface0 bg:color_blue)]($style)'
+style = "bg:color_sapphire"
+format = '[[ $symbol( $version) ](fg:color_surface0 bg:color_sapphire)]($style)'
 
 [python]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_surface0 bg:color_blue)]($style)'
+style = "bg:color_sapphire"
+format = '[[ $symbol( $version)( \($virtualenv\)) ](fg:color_surface0 bg:color_sapphire)]($style)'
 
 [docker_context]
 symbol = ""
-style = "bg:color_steel"
-format = '[[ $symbol( $context) ](fg:color_text bg:color_steel)]($style)'
+style = "bg:color_blue"
+format = '[[ $symbol( $context) ](fg:color_text bg:color_blue)]($style)'
 
 [conda]
-style = "bg:color_steel"
-format = '[[ $symbol( $environment) ](fg:color_text bg:color_steel)]($style)'
+style = "bg:color_blue"
+format = '[[ $symbol( $environment) ](fg:color_text bg:color_blue)]($style)'
 
 [time]
 disabled = false
 time_format = "%R"
-style = "bg:color_overlay"
-format = '[[  $time ](fg:color_text bg:color_overlay)]($style)'
+style = "bg:color_base"
+format = '[[  $time ](fg:color_text bg:color_base)]($style)'
 
 [line_break]
 disabled = false
@@ -158,4 +156,4 @@ disabled = false
 [character]
 disabled = false
 success_symbol = '[](bold fg:color_green)'
-error_symbol = '[](bold fg:color_red)'
+error_symbol   = '[](bold fg:color_red)'
