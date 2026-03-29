@@ -38,7 +38,7 @@ A dusk-blue base with soft leaf-green accents, cyan selections, and crisp blue/c
 
 ```bash
 mkdir -p ~/.config/starship/
-git clone https://git.jshuntley.com/fjord-theme/fjord-starship.git --depth 1 ~/.config/starship/fjord-starship
+git clone https://github.com/fjord-themes/fjord-starship.git --depth 1 ~/.config/starship/fjord-starship
 ```
 
 2. Add to your config (`~/.zshrc / ~/.bashrc`):
