@@ -37,7 +37,7 @@ color_blue     = "#4C89C9"
 
 # Neutrals
 color_base     = "#212128"
-color_surface0 = "#1F2A39"
+color_surface0 = "#1F3239"
 color_text     = "#E8F0F3"
 
 # Alerts
